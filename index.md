@@ -20,8 +20,6 @@ Just search for `eth0_bot` in Telegram, or simply click [here][eth0_bot], and st
 If you're in China or you speak Chinese, and Server Chan works well on your phone, I suggest you keep using it.
 While Server Chan is indeed very good, there are some problems. Server Chan push messages to you via its client app, or via a WeChat account. First of all I don't want another new app, especially for such a simple work (besides, there was issue with long-live connection when I first used it); Secondly WeChat for Android is very slow, and cause both performance and battery issues on my phone. Telegram is a lightweight alternative to both: it's fast, focuses on only one thing -- messaging, and it's secure.
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 # Changelog
 
 See [changelog page][Changelog] for detailed log.
