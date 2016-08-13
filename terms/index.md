@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Terms of Service
 
 1. Your must agree the terms on this page before using our service. That is to say, you must not use our service if you disagree any of the terms on this page.
