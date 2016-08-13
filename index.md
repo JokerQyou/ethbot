@@ -24,6 +24,11 @@ While Server Chan is indeed very good, there are some problems. Server Chan push
 
 See [changelog page][Changelog] for detailed log.
 
+# Terms of service
+
+See [Terms of service page][ToS] for the up-to-date version of our terms.
+
 [ServerChan]: http://sc.ftqq.com/2.version
 [eth0_bot]: https://telegram.me/eth0_bot
 [Changelog]: changelog
+[ToS]: terms
