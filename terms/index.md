@@ -15,6 +15,7 @@ layout: default
 
   No personal data will be stored with these collected metadata. The collected metadata is used for usage analytics of the bot.
   We might share the anaylytics publicly, or only with some third parties.
+
 4. We do not inspect your messages. We do not modify your messages. We do not block or filter your messages.
 5. Our service is provided in the hope that it will be useful. If our service is used for terrorism or threatening lives of people, we will take action.
 6. It is your responsibility to obey the local law when using our service.
