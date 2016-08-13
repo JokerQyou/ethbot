@@ -19,3 +19,8 @@ layout: default
 * Markdown support;
 * Help messages improved;
 * You can now trigger a push via `GET` request;
+
+### 2016.08.13
+
+* Bot moved from Openshift to a standard Linux server.
+* Old server is still functional as a relay to the new one.
