@@ -24,3 +24,7 @@ layout: default
 
 * Bot moved from Openshift to a standard Linux server.
 * Old server is still functional as a relay to the new one.
+
+### 2016.09.03
+
+* Bot server moved to Tokyo, Japan.
