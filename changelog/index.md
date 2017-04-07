@@ -28,3 +28,11 @@ layout: default
 ### 2016.09.03
 
 * Bot server moved to Tokyo, Japan.
+
+### 2016.12.19
+
+* Bot server moved to Taiwan.
+
+### 2017.04.08
+
+* Support `parse_mode` parameter to set text content format.
