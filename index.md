@@ -39,7 +39,8 @@ You might want to revoke the registered code and register a new one when:
       * `markdown`: this is the default value;
       * `html`: instruct the bot to send `text` as HTML content;
       * `plain`: instruct the bot to send `text` as plain text content;
-      Notice: if your content might be valid markdown or HTML content, you should explicitly use `plain`, or Telegram server will refuse to accpet it, resulting the push failed.
+
+        Notice: if your content might be invalid markdown or HTML content, you should explicitly use `plain`, or Telegram server will refuse to accpet it, resulting the push failed.
 * `GET` `/push/<your_push_code_here>?text=<your_text_to_push>&parse_mode=<content_parse_mode>`
 
   If you don't want to set `parse_mode`, drop the `&parse_mode=...` part.
