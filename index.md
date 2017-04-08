@@ -9,11 +9,11 @@ Currently there is only a pushbot available. Continue reading to see what it is 
 ## Pushbot
 
 Inspired by [Server Chan][ServerChan], the `/push` command acts as a tool for programmers / server operators to easily push instant messages to themselves by performing an HTTP POST request.
-For example, a server operator can write a simple script to monitor the server status, and push an alert message to himself about abnormal service status. Thanks to Telegram, this push is nearly instant; But due to implement detail (a POST request is first queued by the bot before being pushed to Telegram, this is for performance consideration), the message is slightly delayed. Currently the delay is about 1~3 seconds.
+For example, a server operator can write a simple script to monitor the server, and push an alert message to himself about abnormal service status. Thanks to Telegram, this push is nearly instant; But due to implement detail (a POST request is first queued by the bot before being pushed to Telegram, this is for performance consideration), the message is slightly delayed. Currently the delay is about 1~3 seconds.
 
 ### Pushbot usage
 
-Just search for `eth0_bot` in Telegram, or simply click [here][eth0_bot], and start chatting with the bot. Send `/push` to her and she will answer you with the help about the pushbot.
+Just search for `eth0_bot` in Telegram, or simply click [here][eth0_bot], and start chatting with the bot. Just send `/push` to her.
 
 #### How does it work
 
@@ -33,15 +33,15 @@ You might want to revoke the registered code and register a new one when:
 * `POST` `/push`
 
   Parameters:
-    * `code`: **required**, your push code, as told by the bot via Telegram after sending `/register` to her;
+    * `code`: **required**, your push code, as told by the bot via Telegram after sending `/push register` to her;
     * `text`: **required**, the text to push;
     * `parse_mode`: optional, specify the content format of `text`, could be one of the following:
       * `markdown`: this is the default value;
       * `html`: instruct the bot to send `text` as HTML content;
       * `plain`: instruct the bot to send `text` as plain text content;
 
-        Notice: if your content might be invalid markdown or HTML content, you should explicitly use `plain`, or Telegram server will refuse to accpet it, resulting the push failed.
-* `GET` `/push/<your_push_code_here>?text=<your_text_to_push>&parse_mode=<content_parse_mode>`
+        Notice: if your content might be invalid markdown or HTML content, you should explicitly use `plain`, or Telegram server will refuse to accpet it, thus your message will be lost.
+* `GET` `/push/<code>?text=<your_text_to_push>&parse_mode=<content_parse_mode>`
 
   If you don't want to set `parse_mode`, drop the `&parse_mode=...` part.
 
